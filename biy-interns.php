@@ -320,97 +320,244 @@ Apply Now
   Present Advanced Builders.
 </font>
 
-<?php
-//current team members listed is team csv file in same directory as this file
-// get the csv file - add to array
-$csv = array_map('str_getcsv', file('team-page.csv'));
-?>
+  <table border="0" cellpadding="6" cellspacing="6" width="750">
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-adi.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Adi</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Lexington High School, Lexington, MA<br>
+		   Passion: Debating, Soccer<br>
+           Heroes: Stephen Curry, Charles Darwin, Nelson Mandela<br>
+    	</font>
+		  <a href="https://invention-universe.com/adi/" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-memo.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Memo</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Colegio Las Hayas, Mexico<br>
+		   Passions: Basketball, Robotics<br>
+           Heroes: Dav Pilkey, Kobe Bryant<br>
 
-<table border="0" cellpadding="6" cellspacing="6" width="750">
-<?php
-//get values
-foreach ($csv as $key => $value) {  
-if($value[12]=='TRUE'){?>
-	<tr>
-      <td width="106" valign="top">
-		<img border="0" style="margin-top: 5px;" src="<?php echo $value[14]; ?>" width="100" height="100">
+    	</font>
+		  <a href="https://invention-universe.com/memo/" target="_blank">Website</a>
       </td>
-      <td width="548" valign="top" align="left">
-        <font size="4" face="verdana"><?php echo $value[0]; ?></font>  <font size="3" face="verdana" color="gray">
-        - <?php echo $value[1]; ?>
-        <br>
-<!-- Education 1 Field -->
-		<?php if (!empty($value[2])) {?> 
-          <?php echo $value[2]; ?>
-          <br>
-		<?php };?>
-<!-- Education 2 Field -->
-        <?php if (!empty($value[3])) {?> 
-          <?php echo $value[3]; ?>
-          <br>
-		<?php };?>
-<!-- Hobbies Field -->
-        <?php if (!empty($value[4])) {?> 
-          Hobbies: <?php echo $value[4]; ?>
-          <br>
-		<?php };?>
-<!-- Home Town Field -->
-        <?php if (!empty($value[16])) {?> 
-          Home Town: <?php echo $value[16]; ?>
-          <br>
-		<?php };?>
-<!-- Heroes Field -->
-        <?php if (!empty($value[5])) {?> 
-          Heroes: <?php echo $value[5]; ?>
-          <br>
-		<?php };?>
-<!-- Goals Field -->
-        <?php if (!empty($value[17])) {?> 
-          Goal: <?php echo $value[17]; ?>
-          <br>
-		<?php };?>
-<!-- Wish Field -->
-        <?php if (!empty($value[18])) {?> 
-          Wish: <?php echo $value[18]; ?>
-          <br>
-		<?php };?>
-<!-- Least Favorite Thing to Do! Field -->
-        <?php if (!empty($value[6])) {?> 
-          Least Favorite Thing to Do: 
-		  <?php echo $value[6]; ?>
-          <br>
-		<?php };?>
-<!-- Favorite Quote Field -->
-        <?php if (!empty($value[7])) {?> 
-          Favorite Quote: <?php echo $value[7]; ?>
-          <br>
-		<?php };?>
-<!-- Skills Wanted Field -->
-        <?php if (!empty($value[8])) {?> 
-          Skills Wanted: <?php echo $value[8]; ?>
-          <br>
-		<?php };?> 
-<!-- Favorite Books Field -->
-        <?php if (!empty($value[21])) {?> 
-          Favorite Books: <?php echo $value[21]; ?>
-		<?php };?>      
-<!-- Website Fields -->
-        <?php if (!empty($value[9])) {?>
-          <a href="<?php echo $value[10]; ?>">
-		    <?php echo $value[9];?>
-          </a> 
-		<?php };?>
-<!-- Website 2 -->
-        <?php if (!empty($value[19])) {?>
-          | <a href="<?php echo $value[20]; ?>">
-		    <?php echo $value[19];?>
-          </a>
-		<?php };?>
-        </font>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-valentin.png" width="100" height="">
       </td>
-    </tr>   
-<?php };}
-?>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Valentin</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Congress Veracruz, Mexico<br>
+		   Passions: Animation, Coding, Philosophy<br>
+           Hobbies: Boxing, Music, Chess, Reading<br>
+    	</font>
+		  <a href="https://invention-universe.com/valentin/" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Victor</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: <br>
+		   Passion: <br>
+           Heroes: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-georges.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">George</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Ridgeville, Vancouver, Canada<br>
+		   Hobbies: Snowboarding, Fishing, Soldering<br>
+           Heroes: Parents<br>
+           Quote: "Works of art make rules; rules do not make works of art." — Claude Debussy<br>
+    	</font>
+		  <a href="https://invention-universe.com/georges-2/" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Ryan</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: <br>
+		   Passion: <br>
+           Heroes: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Isaiah</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: <br>
+		   Passion: <br>
+           Heroes: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Noah</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: <br>
+		   Passion: <br>
+           Heroes: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-liam.png" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Liam</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Holy Cross, Burnaby, British Columbia<br>
+		   Favorite Food: Fried chicken<br>
+           Quote: "Never give up."  Winston Churchill<br>
+    	</font>
+		  <a href="https://invention-universe.com/LiamC-2">Website</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-sofia.png" width="100" height="">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Sofia</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: <br>
+		   Passion: <br>
+           Heroes: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Daniel</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: <br>
+		   Passion: <br>
+           Book Favs: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-lena.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Lena</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Aurora Montessori, Toronto<br>
+		   Passions: Sports, Crafts<br>
+           Heroes: My parents and teachers<br>
+		   Least Favorite Things: Not getting to finish a book.<br>
+           Quote: "Patience is the ability to keep a good attitude while waiting." -Joyce Meyers<br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-cindy.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Cindy</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: St. Mildred's-Lightbourn School, Toronto<br>
+		   Passions: Listening to music, Baking, Skating, Shopping<br>
+           Least Favorite Things:  History Class, Bugs, and Mushrooms <br>
+           Quote: “How lucky am I to have something that makes saying goodbye so hard.” – Winnie the Pooh<br>
+    	</font>
+		  <a href="www.linkedin.com/in/cindy-xinyi-lin-8777b5320" target="_blank">LinkedIn</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-ryan-w.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Ryan</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Commonwealth School, Boston<br>
+		   Passions: Basketball, Socer, Piano, Photography, Coding<br>
+           Heroes: Derrick White, Steph Curry <br>
+           Quote: "Focus on the moment, lock in on the goal."<br>
+    	</font>
+		  <a href="https://www.invention-universe.com/ryan-w/" target="_blank">Website</a>
+      </td>
+    </tr>
+	
 </table>
 
 <!------------ Past Interns -------------------->
@@ -420,97 +567,645 @@ if($value[12]=='TRUE'){?>
 <font size="4" face="Times New Roman" color="#000000" align="left">
   Advanced Builders Presently in College
 </font>	
-
-<table border="0" cellpadding="6" cellspacing="6" width="750">
-<?php
-//get values
-foreach ($csv as $key => $value) {  
-if($value[13]=='TRUE'){?>
-	<tr>
-      <td width="106" valign="top">
-		<img border="0" style="margin-top: 5px;" src="<?php echo $value[14]; ?>" width="100" height="100">
+  <table border="0" cellpadding="6" cellspacing="6" width="750">  
+  
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-rodrigo.jpg" width="100" height="">
       </td>
-      <td width="548" valign="top" align="left">
-        <font size="4" face="verdana"><?php echo $value[0]; ?></font>  <font size="3" face="verdana" color="gray">
-        - <?php echo $value[1]; ?>
-        <br>
-<!-- Education 1 Field -->
-		<?php if (!empty($value[2])) {?> 
-          <?php echo $value[2]; ?>
-          <br>
-		<?php };?>
-<!-- Education 2 Field -->
-        <?php if (!empty($value[3])) {?> 
-          <?php echo $value[3]; ?>
-          <br>
-		<?php };?>
-<!-- Hobbies Field -->
-        <?php if (!empty($value[4])) {?> 
-          Hobbies: <?php echo $value[4]; ?>
-          <br>
-		<?php };?>
-<!-- Home Town Field -->
-        <?php if (!empty($value[16])) {?> 
-          Home Town: <?php echo $value[16]; ?>
-          <br>
-		<?php };?>
-<!-- Heroes Field -->
-        <?php if (!empty($value[5])) {?> 
-          Heroes: <?php echo $value[5]; ?>
-          <br>
-		<?php };?>
-<!-- Goals Field -->
-        <?php if (!empty($value[17])) {?> 
-          Goal: <?php echo $value[17]; ?>
-          <br>
-		<?php };?>
-<!-- Wish Field -->
-        <?php if (!empty($value[18])) {?> 
-          Wish: <?php echo $value[18]; ?>
-          <br>
-		<?php };?>
-<!-- Least Favorite Thing to Do! Field -->
-        <?php if (!empty($value[6])) {?> 
-          Least Favorite Thing to Do: 
-		  <?php echo $value[6]; ?>
-          <br>
-		<?php };?>
-<!-- Favorite Quote Field -->
-        <?php if (!empty($value[7])) {?> 
-          Favorite Quote: <?php echo $value[7]; ?>
-          <br>
-		<?php };?>
-<!-- Skills Wanted Field -->
-        <?php if (!empty($value[8])) {?> 
-          Skills Wanted: <?php echo $value[8]; ?>
-          <br>
-		<?php };?>   
-<!-- Favorite Books Field -->
-        <?php if (!empty($value[21])) {?> 
-          Favorite Books: <?php echo $value[21]; ?>
-		<?php };?>    
-<!-- Website Fields -->
-        <?php if (!empty($value[9])) {?>
-          <a href="<?php echo $value[10]; ?>">
-		    <?php echo $value[9];?>
-          </a> 
-		<?php };?>
-<!-- Website 2 -->
-        <?php if (!empty($value[19])) {?>
-          | <a href="<?php echo $value[20]; ?>">
-		    <?php echo $value[19];?>
-          </a>
-		<?php };?>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Rodrigo</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Tecnológico de Monterrey, Colegio Las Hayas, Mexico<br>
+		   Passions: Learning languages, Biomechanics<br>
+           Book Favs: <br>
+           Quote: <br>
+    	</font>
+		  <a href="" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-dan-evalcarcel-150.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Dan<!-- November 6th 2004  --></font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+           School: Colegio Cultural Terranova, Mexico<br>
+		   Passion: Art<br>
+           Book Favs: Dracula, Human Anatomy: A visual history, Les Fleurs du Mal<br>
+           Quote: "La realidad existe independiente a mí , pero,  yo soy quien la dota de valor y de sentido, que es lo que realmente importa, no los meros objetos."
+           - Jaime García Granados <br>
+    	</font>
+		  <a href="http://invention-universe.com/revian/" target="_blank">Website</a>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-ari-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Ari<!-- November 6th 2004  --></font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Colegio Las Hayas, Xalapa, Mexico <br>
+		  University of Toronto<br>
+          Hobbies: Basketball, Programming <br>
+          Favorite Joke:"Why do scuba divers fall backwards off of the boat? 
+		                 Because if they fell forward, they'd still be in the boat.
+"<br>
+    	</font>
+		  <a href="http://invention-universe.com/ari-c/" target="_blank">Website</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Arnav</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Hill House School, Doncaster, England <br>
+          Hobbies: Coding, Guitar, Math, Tennis, Cricket<br>
+		  Heroes: Richard Feynman, Martin Luther King jr, Mahatma Ghandi<br>
+          Favorite Quote: "Live as if you were to die tommorow, learn as if you were to live forever" -Ghandi <br>
+		  Favourite Book: Feynman lectures on physics <br>
+		  </font>
+		  <a href="http://www.invention-universe.com/arnav/" target="_blank">Website 2017</a>
+		   |
+		  <a href="interns/arnav/arnav-lab-book.ppt"" target="_blank">Lab Book</a> 
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-owen.png" width="100" height="">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Owen</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Upper Devotion, Bookline, MA; Univ Arizona<br>
+          Hobbies: Chello, tennis, math, foriegn languages, Minecraft<br>
+		  Heroes: Turtles<br>
+          Favorite Quote: <br>
+    	</font>
+		  <a href="http://www.invention-universe.com/owen-s/" target="_blank">Website 2017</a>
+		   |
+		  <a href="interns/owen/owen-lab-book.ppt"" target="_blank">Lab Book</a> 
+      </td>
+    </tr>
+
+<!--
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-nick-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Nick</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: German International School Boston<br>
+		  Home: Arlington, MA<br>
+          Hobbies: Soccer, robots, skiing<br>
+          Favorite super hero: Hulk<br>
+          Movie Fav's: RED<br>
+            <a href="http://invention-universe.com/nick/">Website 2013</a>
+    	</font>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-shirley.gif" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Shirley</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Acton-Boxborough Regional High<br>
+          Hobbies: Drawing, randomly singing, learning languages<br>
+          Favorite Movie: Les Mis�rables<br>
+          <a href="http://invention-universe.com/shirley/">Website 2013</a>
+    	</font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="1" src="invention-universe/resources/las-hayas-jeronimo-100x100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Jeronimo</font><font size="3" face="Times New Roman" color="gray">
+        - Development Advanced Builder<br>
+        Colegio Las Hayas, Veracruz, Mexico<br>
+        Hobbies: play computer games, walk, play volleyball, plants<br>
+        Heroes: my dad<br>
+        Quote: &quot;Just do it.&quot;<br>
+        <a href="http://scratch.mit.edu/projects/jeroaranda/618605">
+        Scratch Profile</a></font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="104">
+      <img border="1" src="images/team-carolyn-corbet-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="104">
+      <font size="4" face="Times New Roman">Carolyn, 13</font><font size="3" face="Times New Roman" color="gray">
+      - Development Advanced Builder<br>
+      School: Lucille Brown School, Virginia<br>
+        Hobbies: Sailing, Lionel model trains, reading, history, science,
+      cooking, skiing, Girl Scouts<br>
+      <a href="images/bio-carolyn.doc">
+      Resume</a></font>
+      </td>
+    </tr>
+    
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-john-conner-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">John Conner, 14</font>
+        <font size="3" face="Times New Roman" color="gray">
+        - Development Advanced Builder<br>
+        School: International School of Basel, Switzerland<br>
+        Hobbies: <br>
+        Heroes: <br>
+        Quote: <br>
+        <a href="interns/john-conner/">Website 2012</a>
+    	</font>
+      </td>
+    </tr>
+    
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Ankit, 14</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: <br>
+		  Home: <br>
+          Hobbies: <br>
+          Heroes: <br>
+          Quote: <br>
+          Book Fav's: <br>
+        <a href="interns/ankit/" target="_blank">Website 2012</a>
+    	</font>
+      </td>
+    </tr>
+    -->
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-ayla-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Ayla: <!--Birthday - May 26 1999-->  
+	  </font>
+	  <font size="3" face="Times New Roman" color="gray">
+	  - Development Advanced Builder<br>
+      School:&nbsp;Hopkington Middle School, Hopkington, MA<br>
+        Hobbies: &nbsp;Singing, piano, acting, dancing, and soccer<br>
+      Favorite Song: 'Don't Stop Believin' &nbsp;<br>
+      <a href="http://invention-universe.com/ayla/index.html" target="_blank">
+        Website 2014
+	  </a>
+	  |
+      <a href="interns/ayla/" target="_blank">
+        Website 2011
+	  </a>
+	  | 
+	  <a href="interns/ayla/ayla-bio.ppt" target="_blank">
+	    PowerPoint Profile
+      </a>
+	  </font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-gabriel-ibarra-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Gabriel <!-- Birthday - May 26 1999</font>-->
+	  <font size="3" face="Times New Roman" color="gray">- Development Advanced Builder<br>
+	    School: Academia Los Pinares, Honduras<br/>
+        Hobbies: Music (Drummer), Videos Games, Movies <br/>
+ 				Heroes: Dr. Seuss, Robert De Niro, Bill Gates <br/>
+				Movie Fav's: Forrest Gump, 12 Angry Men, Shutter Island <br/>
+				Quote: "It is the mark of an educated mind to be able to 
+				entertain a thought without accepting it." - Aristotle <br/>
+        <a href="http://invention-universe.com/gabriel-ibarra/" target="_blank">
+          Website 2015
+	    </a>
+	     | 
+        <a href="../s-programs/intern-projects/lab-book-gabriel-052615.pptx" target="_blank">
+          Lab Book May 2015
+	    </a>	  
+	  </font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-andrea-zamudio.png" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Andrea</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Las Hayas, Xalapa, Veracruz<br>
+          Hobbies: Art, Netflix marathons, playing violin, reading<br>
+          Heroes: My parents<br>
+          Favorite Books: Lord Of The Rings, Harry Potter & A Clockwork Orange<br>
+          Favorite Quote: Happiness can be found even in the darkest of times if one only remembers to turn on the light. <br>
+            <a href="http://invention-universe.com/andrea/" target="_blank">Website 2015</a>
         </font>
       </td>
-    </tr>   
-<?php };}
-?>
+    </tr>
+	
+	<!--
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-jose-maria.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Jose Maria</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Las Hayas, Xalapa, Veracruz<br>
+          Hobbies: Videogames, movies, series, books, eating <br>
+          Heroes: Luke Skywalker and my parents<br>
+            <a href="http://invention-universe.com/jose/" target="_blank">Website 2015</a> - <a href="ppt-lab-books/lab-book-jose.pptx" target="_blank">Lab Book</a>
+        </font>
+      </td>
+    </tr>
+    
+	<tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-mario.png" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Mario</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Colegio Las Hayas, Mexico<br>
+          Hobbies: Photography, bicycling, Taekwondo & Animation<br>
+          Heroes: My parents<br>
+          Quote: “Life isn't about waiting for the storm to pass...it's learning to dance in the rain.” - Anonymous<br>
+          Book Fav's: The Great Gatsby & The Perks of Being a Wallflower<br>
+	  <a href="http://invention-universe.com/mario/" target="_blank">Website 2015</a>
+	     | 
+        <a href="../s-programs/intern-projects/lab-book-mario.pptx" target="_blank">
+          Lab Book August 2015
+	    </a>
+    	</font>
+      </td>
+    </tr>
+
+    <tr>
+        <td width="106" valign="top" align="left" height="118">
+          <img border="0" src="images/team-bernardo.gif" width="100" height="100">
+        </td>
+        <td width="498" valign="top" align="left" height="118">
+          <font size="4" face="Times New Roman">Bernardo</font>
+          <font size="3" face="Times New Roman" color="gray">
+             - Development Advanced Builder<br>
+            School: Las Hayas, Xalapa, Mexico<br>
+            Hobbies: Archery, Arduino-Building, Programming (html, css, arduino).<br>
+            Heroes: My Parents <br>
+              <a href="http://www.invention-universe.com/bernardo" target="_blank">Website 2015</a>
+          </font>
+        </td>
+      </tr>
+	-->
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-davidn-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">David N</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Fenn School Concord, MA; MIT<br>
+		  Home: Lexignton, MA<br>
+          Hobbies: Robotics<br>
+          Heroes: <br>
+          Quote: <br>
+          Book Fav's: <br>
+    	</font>
+      </td>
+    </tr>
+
+    <!--<tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Neel</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: <br>
+		  Home: England<br>
+          Hobbies: Minecraft, Web programming<br>
+          Heroes: <br>
+          Quote: <br>
+          Book Fav's: <br>
+    	</font>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Leland</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: <br>
+          Hobbies: <br>
+		  Heroes: <br>
+          Favorite Quote: <br>
+    	</font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Phineas</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: <br>
+          Hobbies: <br>
+		  Heroes: <br>
+          Favorite Quote: <br>
+    	</font>
+      </td>
+    </tr>
+    -->
+	
+
 </table>
 
-
  
+<table border="0" cellpadding="6" cellspacing="6" width="750">
 
+	  <!--<tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Smarika <!-- Birthday - May 26 1999  --><!--</font>
+	  <font size="3" face="Times New Roman" color="gray">- Development Advanced Builder<br>
+      School: Cambridge Rindge and Latin<br>
+        Hobbies: Reading<br>
+        Hero: <br>
+      <a href="http://invention-universe.com/smarika/" target="_blank">
+        Website 2014
+	  </a>
+	  </font>
+      </td>
+    </tr>-->
+
+    <!--<tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-placeholder.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Svilen <!-- Birthday - May 26 1999  --><!--</font>
+	  <font size="3" face="Times New Roman" color="gray">- Development Advanced Builder<br>
+      School: Sofia, Bulgaria<br>
+        Hobbies: <br>
+        Hero: <br>
+      <a href="http://invention-universe.com/svilen/" target="_blank">
+        Website 2014
+	  </a>
+	  </font>
+      </td>
+    </tr>-->
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-daniel-gonzalez-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Daniel <!-- Birthday - May 26 1999  --></font>
+	  <font size="3" face="Times New Roman" color="gray">- Development Advanced Builder<br>
+      School: Engineering, University of Veracruz<br>
+        Hobbies: Computer Programming, Guitar<br>
+      <a href="http://invention-universe.com/daniel-gv/index.html" target="_blank">
+        Website 2014
+	  </a>
+	  </font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-jonathan-h.jpg" width="100" height="100"></p>
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Jonathan</font><font size="3" face="Times New Roman" color="gray">
+        - Development Advanced Builder<br>
+        School: Astro Physics, Stanford<br>
+        Hobbies:&nbsp; Building with LEGO's<br>
+        Heroes:&nbsp;My dad and Achimedes<br>
+        Quote: &quot;Yar!&quot;<br>
+        <a href="http://invention-universe.com/jonathan/" target="_blank">Website 2013</a>
+		 | 
+		<a href="interns/jonathan/" target="_blank">Website 2010</a>
+		 | 
+        Power Point Lab Book
+		</font>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-valeria-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Val<!--5-29-1995--></font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Computer Science, MIT<br>
+          Hobbies: Sleeping, Cooking, Reading, Learning cool new stuff<br>
+          Heroes: My mom (she always had all the superpowers)<br>
+          Book Fav's: Sherlock Holmes, Kalila and Dimna, The Little Prince<br>
+          <a href="http://invention-universe.com/val/" target="_blank">Website 2013</a>
+    	</font>
+      </td>
+    </tr>
+    
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-michael-z-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Michael</font><font size="3" face="Times New Roman" color="gray">
+      - Development Advanced Builder<br>
+      School:&nbsp; Commonwealth of Virginia<br>
+      Hobbies:&nbsp;Football, computers, business<br>
+      Movie Fav: Avatar<br>
+      Band Fav: 3 Doors Down&nbsp;<br>
+      Website 2013
+	   |
+	  <a href="interns/michael/" target="_blank">Website 2010</a>
+       | 
+	  <a href="interns/michael/images/website-michael.ppt">PowerPoint Profile</a></font>
+      </td>
+    <tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-travis-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+      <font size="4" face="Times New Roman">Travis</font>
+      <font size="3" face="Times New Roman" color="gray">
+      - Development Advanced Builder<br>
+        School: Engineering, UMass<br>
+        Hobbies: Playing Xbox, playing the saxophone, playing the guitar<br>
+        Heroes: Bill Gates, and Kenny G<br>
+        Quote:&nbsp;&quot;Do or do not... there is no try.&quot; -Yoda<br>
+	  <a href="http://invention-universe.com/travis/" target="_blank">
+	    Website 2013
+	  </a>
+	   | 
+      <a href="interns/travis/" target="_blank">
+	    Website 2012
+	  </a>
+	   | 
+      <a href="interns/travis-2011/" target="_blank">
+	    Website 2011
+	  </a>
+      </font>
+      </td>
+    </tr>
+	
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img src="images/team-david-bredthauer-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118"> <font size="4"> David</font>
+        <font size="3" face="Times New Roman" color="gray">&nbsp;
+        - Development Advanced Builder<br>
+        School: Brownell-Talbot School, Omaha, Nebraska<br>
+        Fav's: Tennis, Tae-Kwon-Do, Half-life games, Cheesecake and Bon Jovi<br>
+        Quote:&nbsp;&quot;Objection!!!!!!!!!!!!!!!!&quot;<br>
+		<a href="http://www.escapefromalcajazz.com/">Jazz Band Website</a>
+		 | 
+        <a href="interns/david/index-david.html" target="_blank">
+          Personal Website 2012 
+		</a>
+		 | 
+		PPT Lab Book
+		</font>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-neena-dugar.gif" align="right" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118"> 
+        <font size="4">Neena</font> <font size="3" face="Times New Roman" color="gray">&nbsp;
+        - Development Advanced Builder<br>
+        School: Computer Scinece, MIT<br>
+        Musical Instruments: Piano, Guitar<br>
+        Favorite Word: "Metaphysical"<br>
+		Favorite Project: <a href="http://hide-and-street.herokuapp.com/">"Hide and Street" game</a><br />
+		<a href="http://neena.herokuapp.com/" target="_blank">Website 2013</a>
+		 | 
+        <a href="interns/neena/" target="_blank">Website 2010</a>
+		</font>
+      </td>
+    </tr>
+
+	<tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-andrew-aberdale.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118"> 
+        <font size="4"> Andrew</font> <font size="3" face="Times New Roman" color="gray">&nbsp;
+          - Development Advanced Builder<br>
+          School: Worchester Polytech Institute; Babson MBA<br>
+          Hobbies: Paintball, Snowboarding, Scuba Diving<br>
+        <a href="http://aberdale.info/" target="_blank">Website 2013</a>
+		 |
+        <a href="interns/andrew/" target="_blank">Website 2010</a>
+      </td>
+    </tr>
+	
+    <!--<tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-jesus-librado.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Jesus</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+          School: Engineering, University of Mexico<br>
+          Hobbies: Computer programing, playing voleyball, guitar<br>
+          Heroes: My parents, God, and my brother<br>
+          Favorite Quote: From the fruit of their mouth a person’s stomach is filled; with the harvest of their lips they are satisfied.<br>
+            <a href="http://invention-universe.com/jesus-lib/" target="_blank">Website 2015</a>
+        </font>
+      </td>
+    </tr>-->
+
+<!--
+    <tr>
+      <td width="106" valign="top" align="left" height="118">
+      <img border="0" src="images/team-danielb-100.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Dan</font>
+        <font size="3" face="Times New Roman" color="gray">
+          - Development Advanced Builder<br>
+          School: Concord Academy, Concord, MA <br>
+          Hobbies: Black Ops II, Battlefield 3, Halo 4, Minecraft<br>
+          Book Favs: Unwind, Enclave, Steve Jobs<br>
+          Hero: James Bond<br>
+           Website 2013
+		    | 
+           <a href="interns/dan/">Website 2012</a>
+    	</font>
+      </td>
+    </tr>
+-->
+
+    <!--<tr>
+      <td width="106" valign="top" align="left" height="118">
+        <img border="0" src="images/team-peter-glass.jpg" width="100" height="100">
+      </td>
+      <td width="498" valign="top" align="left" height="118">
+        <font size="4" face="Times New Roman">Peter</font>
+        <font size="3" face="Times New Roman" color="gray">
+           - Development Advanced Builder<br>
+		  Home: Yarmouth, Maine<br>
+          Hobbies: I love skiing, hanging out with friends, Guinea Pigs, and especilly, animating and programing!<br>
+            <a href="http://invention-universe.com/peter-glass/">Website 2013</a>
+    	</font>
+      </td>
+    </tr>-->
+	
+</table>
 
 <!------------ Testimonials -------------------->
 
