@@ -77,12 +77,17 @@ if($value[12]=='TRUE'){?>
         <br>
 <!-- Education 1 Field -->
 		<?php if (!empty($value[2])) {?> 
-          <?php echo $value[2]; ?>
+         School: <?php echo $value[2]; ?>
           <br>
 		<?php };?>
 <!-- Education 2 Field -->
         <?php if (!empty($value[3])) {?> 
           <?php echo $value[3]; ?>
+          <br>
+		<?php };?>
+    <!-- Passion Field -->
+        <?php if (!empty($value[27])) {?> 
+          Passion: <?php echo $value[27]; ?>
           <br>
 		<?php };?>
 <!-- Hobbies Field -->

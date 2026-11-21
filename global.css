@@ -1,0 +1,16 @@
+        A:visited  {color: #404040; text-decoration: none}        
+		A:link  {color: #404040; text-decoration: none}        
+		A:active  {color: #404040; text-decoration: none}        
+		A:hover   {color: #4040ff; text-decoration: bold}		
+		
+		h1 {font-family: verdana, sans-serif; font-size: .85em; font-weight: normal; color: #808080;	margin: 0px 0px,0px, 0px; padding: 0px 0px,0px, 0px;} 				
+		
+		h5 {font-family: verdana, sans-serif; font-size: .85em; font-weight: normal;	color: #ff0000;	margin: 0px 0px,0px, 0px; padding: 0px 0px,0px, 0px;} 				
+		
+		h2 {font-family: verdana, sans-serif; font-size: 1.0em; font-weight: bold; color: #000000; margin: 0px 0px,0px, 0px;	padding: 0px 0px,0px, 0px;} 				
+		
+		h3 {font-family: verdana, sans-serif; font-size: 1.0em; font-weight: normal; color: #808080; margin: 0px 0px,0px, 0px; padding: 0px 0px,0px, 0px;} 				
+		
+		h4 {font-family: verdana, sans-serif; font-size: 1.0em; font-weight: normal; color: #0000ff;	margin: 0px 0px,0px, 0px; padding: 0px 0px,0px, 0px;} 	
+
+		p {font-family: verdana, sans-serif; font-size: 1.0em; color: #808080;}
